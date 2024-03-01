@@ -1,0 +1,100 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Common shared styles */
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* header styles */
+
+header {
+    margin: 40px 240px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-header img {
+    width: 86.041px;
+    height: 40px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-title {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.nav-g {
+    color: #FF42A5;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-about {
+    display: flex;
+}
+
+.nav-about li {
+    margin-left: 32px;
+}
+
+nav li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-follow {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    margin-left: 32px;
+}
+
+.nav-follow>li {
+    padding: 18px 24px;
+}
+
+/* Respomsive styles */
+
+/* small devices */
+
+@media screen and (max-width: 576px) {
+
+    header,
+    .nav-follow,
+    .nav-about li {
+        margin: 0;
+    }
+
+    nav>ul {
+        padding: 0;
+    }
+
+    .nav-about li {
+        padding-bottom: 32px;
+    }
+
+    .nav-container,
+    nav>ul,
+    .nav-about {
+        flex-direction: column;
+    }
+}
