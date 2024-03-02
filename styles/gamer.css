@@ -156,11 +156,16 @@ nav li {
 
 main {
     margin: 120px 0px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 /* Online section styles */
+
+.online {
+    display: flex;
+    justify-content: center;
+}
 
 .online-title {
     color: #0B0223;
@@ -204,6 +209,57 @@ main {
     width: 250px;
 }
 
+/* Anywhere section styles */
+
+.play-anywhere {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.anywhere-container {
+    width: 1460px;
+    display: flex;
+    justify-content: center;
+    gap: 249px;
+}
+
+.anywhere-container>div {
+    width: 29%;
+}
+
+.anywhere-img-2 {
+    width: 200px;
+    position: relative;
+    bottom: 140px;
+    left: 285px;
+}
+
+.anywhere-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0B0223;
+}
+
+.anywhere-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.play-games {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anywhere-img img {
+    width: 100%;
+}
+
+
+
 /* Responsive styles */
 
 /* small devices */
@@ -218,10 +274,6 @@ main {
 
     main {
         margin-top: 50px;
-    }
-
-    .cards img {
-        /* padding-left: 80px; */
     }
 
     .cards {
@@ -247,6 +299,15 @@ main {
         flex-direction: column;
     }
 
+    .anywhere-container {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .anywhere-container>div {
+        width: 100%;
+    }
+
     .banner-container>div {
         width: 100%;
     }
@@ -260,16 +321,23 @@ main {
     .banner-btns {
         justify-content: center;
     }
-}
 
-/* medium devices */
-
-@media screen and (min-width: 576px) and (max-width: 960px) {
-    header {
-        margin: 0;
+    .anywhere-img-2 {
+        width: 140px;
+        height: 0;
+        position: relative;
+        bottom: 120px;
+        left: 250px;
     }
 
-    .banner-btns {
-        justify-content: center;
+    /* medium devices */
+
+    @media screen and (min-width: 576px) and (max-width: 960px) {
+        header {
+            margin: 0;
+        }
+
+        .banner-btns {
+            justify-content: center;
+        }
     }
-}
